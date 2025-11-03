@@ -1,0 +1,51 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* CSS CUSTOM STYLE */
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevents horizontal scroll during animation */
+}
+
+.primary-btn {
+  background-color: #73cb4e;
+  color: #000000;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-effect {
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-effect:hover {
+  background-color: #042125;
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+.box {
+  box-shadow: 1px 1px 5px 1px rgba(201, 201, 201, 0.75);
+}
+
+.box i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15%;
+}
+
+.footer-links ul li:hover {
+  cursor: pointer;
+  color: #73cb4e;
+}
+
+.footer-icon i:hover {
+  cursor: pointer;
+  color: #73cb4e;
+}
