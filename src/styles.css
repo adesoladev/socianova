@@ -6,7 +6,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  overflow-x: hidden; /* Prevents horizontal scroll during animation */
 }
 
 .primary-btn {
