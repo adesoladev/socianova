@@ -867,9 +867,11 @@ html, body {
 [data-aos].aos-animate {
   pointer-events: auto;
 }
-[data-aos]:not(.aos-animate) {
-  opacity: 1;
-  transform: none;
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].aos-animate {
+  visibility: visible;
 }
 nav {
   position: -webkit-sticky;

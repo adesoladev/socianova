@@ -17,10 +17,13 @@ body {
   pointer-events: auto;
 }
 
-/* Ensure elements are visible but in position before animation */
-[data-aos]:not(.aos-animate) {
-  opacity: 1;
-  transform: none;
+/* Prevent flash but allow animations */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].aos-animate {
+  visibility: visible;
 }
 
 nav {

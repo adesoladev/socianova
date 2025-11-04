@@ -1,19 +1,16 @@
-// Wait for DOM to be fully ready
 document.addEventListener('DOMContentLoaded', function() {
   AOS.init({
     once: true,
     duration: 800,
     easing: 'ease-in-out',
-    offset: 0,
-    disable: false, // Keep animations enabled
-    startEvent: 'DOMContentLoaded', // Changed from 'load'
+    offset: 50, // Changed from 0 to 50
     anchorPlacement: 'top-bottom',
   });
-  
-  // Refresh AOS after a short delay to catch any late-loading content
-  setTimeout(() => {
-    AOS.refresh();
-  }, 100);
+});
+
+// Refresh AOS after images and content load
+window.addEventListener('load', function() {
+  AOS.refresh();
 });
 
 // Select hamburger button and mobile menu
