@@ -1,9 +1,19 @@
-AOS.init({
-  once: true,
-  startEvent: 'load',
-  duration: 800, // Animation duration (in ms)
-  easing: 'ease-in-out', // Smooth motion
-  offset: 0, // <--- ensures animations trigger even if in view on load
+// Wait for DOM to be fully ready
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    once: true,
+    duration: 800,
+    easing: 'ease-in-out',
+    offset: 0,
+    disable: false, // Keep animations enabled
+    startEvent: 'DOMContentLoaded', // Changed from 'load'
+    anchorPlacement: 'top-bottom',
+  });
+  
+  // Refresh AOS after a short delay to catch any late-loading content
+  setTimeout(() => {
+    AOS.refresh();
+  }, 100);
 });
 
 // Select hamburger button and mobile menu
