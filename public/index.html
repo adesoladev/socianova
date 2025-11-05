@@ -76,7 +76,7 @@
           <!-- Mobile Hamburger -->
           <button
             id="menu-btn"
-            class="text-text text-2xl md:hidden focus:outline-none"
+            class="text-text text-2xl md:hidden focus:outline-none cursor-pointer"
           >
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -403,42 +403,44 @@
       class="bg-primary text-text mt-6 py-12 flex flex-col md:flex-row justify-center items-center md:space-x-24 space-y-8 md:space-y-0"
     >
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span>3,200+</span>
-        <p>Brands trust Socianova</p>
+        <span class="text-4xl pb-2">3,200+</span>
+        <p class="opacity-75">Brands trust Socianova</p>
       </div>
 
       <!-- Divider -->
       <div
         data-aos="zoom-in"
-        class="hidden md:block w-px h-16 bg-text/40"
+        class="hidden md:block w-px h-24 bg-text/40"
       ></div>
       <!-- vertical line for desktop -->
       <div
         data-aos="zoom-in"
-        class="block md:hidden w-32 h-px bg-text/40"
+        class="block md:hidden w-64 h-px bg-text/40"
       ></div>
       <!-- horizontal line for mobile -->
 
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span>1,850+</span>
-        <p>Successful campaigns delivered</p>
+        <span class="text-4xl pb-2">1,850+</span>
+        <p class="opacity-75">Successful campaigns delivered</p>
       </div>
 
       <!-- Divider -->
       <div
         data-aos="zoom-in"
-        class="hidden md:block w-px h-16 bg-text/40"
+        class="hidden md:block w-px h-24 bg-text/40"
       ></div>
       <!-- vertical line for desktop -->
       <div
         data-aos="zoom-in"
-        class="block md:hidden w-32 h-px bg-text/40"
+        class="block md:hidden w-64 h-px bg-text/40"
       ></div>
       <!-- horizontal line for mobile -->
 
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span><i class="fa-solid fa-star text-statsrating"></i> 4.9/5</span>
-        <p>Average client rating</p>
+        <span class="text-4xl pb-2"
+          ><i class="fa-solid fa-star text-statsrating"></i> 4.9/5</span
+        >
+        <p class="opacity-75">Average client rating</p>
       </div>
     </section>
 
@@ -465,7 +467,7 @@
           </div>
           <div class="p-4 flex flex-col flex-grow justify-between">
             <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
-              >News</span
+              >Guides</span
             >
             <h3 class="text-lg font-bold py-3 md:py-0">
               How to Choose the Right Influencer for Your Brand
@@ -486,7 +488,7 @@
           </div>
           <div class="p-4 flex flex-col flex-grow justify-between">
             <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
-              >News</span
+              >Case Studies</span
             >
             <h3 class="text-lg font-bold py-3 md:py-0">
               The ROI of Influencer Marketing: What the Numbers Say
@@ -508,7 +510,7 @@
 
           <div class="p-4 flex flex-col flex-grow justify-between">
             <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
-              >News</span
+              >Trends</span
             >
             <h3 class="text-lg font-bold py-3 md:py-0">
               Top 5 Influencer Marketing Trends to Watch in 2025
@@ -596,7 +598,7 @@
           <!-- Prev Button (desktop side) -->
           <button
             data-aos="slide-left"
-            class="prev hidden md:block cursor-pointer bg-primary shadow-md text-secondary p-4 rounded-full pointer-events-auto"
+            class="prev hidden md:block cursor-pointer bg-primary shadow-md text-secondary p-4 rounded-full pointer-events-auto hover:text-accent transition"
           >
             &#10094;
           </button>
@@ -679,7 +681,7 @@
           <!-- Next Button (desktop side) -->
           <button
             data-aos="slide-right"
-            class="next hidden md:block cursor-pointer bg-primary shadow-md text-secondary p-4 rounded-full"
+            class="next hidden md:block cursor-pointer bg-primary shadow-md text-secondary p-4 rounded-full hover:text-accent transition"
           >
             &#10095;
           </button>
@@ -688,13 +690,13 @@
           <div class="flex md:hidden justify-center gap-6 mt-4">
             <button
               data-aos="slide-left"
-              class="prev bg-primary cursor-pointer shadow-md text-secondary p-3 rounded-full"
+              class="prev bg-primary cursor-pointer shadow-md text-secondary p-3 rounded-full hover:text-accent transition"
             >
               &#10094;
             </button>
             <button
               data-aos="slide-right"
-              class="next bg-primary cursor-pointer shadow-md text-secondary p-3 rounded-full"
+              class="next bg-primary cursor-pointer shadow-md text-secondary p-3 rounded-full hover:text-accent transition"
             >
               &#10095;
             </button>
