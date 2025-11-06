@@ -54,6 +54,48 @@ navLinks.forEach(link => {
   });
 });
 
+// Counter animation function
+      function animateCounter(element, target, duration = 2000) {
+        const isDecimal = target % 1 !== 0;
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            element.textContent = isDecimal ? target.toFixed(1) : Math.floor(target).toLocaleString();
+            clearInterval(timer);
+          } else {
+            element.textContent = isDecimal ? current.toFixed(1) : Math.floor(current).toLocaleString();
+          }
+        }, 16);
+      }
+
+      // Intersection Observer to trigger animation when section is visible
+      const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.counter');
+            counters.forEach(counter => {
+              const target = parseFloat(counter.getAttribute('data-target'));
+              animateCounter(counter, target);
+            });
+            observer.unobserve(entry.target); // Only animate once
+          }
+        });
+      }, observerOptions);
+
+      // Observe the stats section
+      const statsSection = document.getElementById('stats');
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
+
 
 // TESTIMONIAL SLIDER
 const container = document.querySelector('.testimonial-container');
@@ -92,3 +134,25 @@ window.addEventListener('resize', () => {
   index = 0; // reset on resize
   showTestimonial();
 });
+
+ // Enhanced form submission with feedback
+      const form = document.getElementById('contactForm');
+      const formStatus = document.getElementById('formStatus');
+      const submitBtn = document.getElementById('submitBtn');
+
+      form.addEventListener('submit', function(e) {
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        
+        // Let Formspree handle the submission
+        // After submission, Formspree will redirect or show a message
+      });
+
+      // Check if returning from Formspree submission
+      if (window.location.search.includes('success')) {
+        formStatus.classList.remove('hidden');
+        formStatus.classList.add('bg-green-100', 'text-green-700');
+        formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+        form.reset();
+      }

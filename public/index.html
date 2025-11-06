@@ -190,6 +190,14 @@
       </div>
     </section>
 
+    <!-- Logo Marquee Section -->
+    <!-- <section>
+      <h2>Turn followers into loyal customers</h2>
+      <div>
+        <img>
+      </div>
+    </section> -->
+
     <!-- About Section -->
     <section
       id="about"
@@ -403,7 +411,9 @@
       class="bg-primary text-text mt-6 py-12 flex flex-col md:flex-row justify-center items-center md:space-x-24 space-y-8 md:space-y-0"
     >
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span class="text-4xl pb-2">3,200+</span>
+        <span class="text-4xl pb-2"
+          ><span class="counter" data-target="3200">0</span>+</span
+        >
         <p class="opacity-75">Brands trust Socianova</p>
       </div>
 
@@ -420,7 +430,9 @@
       <!-- horizontal line for mobile -->
 
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span class="text-4xl pb-2">1,850+</span>
+        <span class="text-4xl pb-2"
+          ><span class="counter" data-target="1850">0</span>+</span
+        >
         <p class="opacity-75">Successful campaigns delivered</p>
       </div>
 
@@ -437,9 +449,10 @@
       <!-- horizontal line for mobile -->
 
       <div data-aos="zoom-in" class="flex flex-col items-center">
-        <span class="text-4xl pb-2"
-          ><i class="fa-solid fa-star text-statsrating"></i> 4.9/5</span
-        >
+        <span class="text-4xl pb-2">
+          <i class="fa-solid fa-star text-statsrating"></i>
+          <span class="counter" data-target="4.9">0</span>/5
+        </span>
         <p class="opacity-75">Average client rating</p>
       </div>
     </section>
@@ -460,65 +473,74 @@
         <div
           data-aos="zoom-in"
           data-aos-delay="200"
-          class="shadow-md flex flex-col h-full md:h-[420px] cursor-pointer rounded-lg mb-12 md:mb-0"
+          class="shadow-md flex flex-col h-full rounded-lg mb-12 md:mb-0"
         >
           <div>
             <img src="Images/influencer.jpg" />
           </div>
           <div class="p-4 flex flex-col flex-grow justify-between">
-            <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
+            <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Guides</span
             >
-            <h3 class="text-lg font-bold py-3 md:py-0">
+            <h3 class="text-lg font-bold py-2">
               How to Choose the Right Influencer for Your Brand
             </h3>
             <p>
               Not every influencer is a fit. Learn the key factors to consider,
               from audience alignment to authenticity, before partnering up.
             </p>
+            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
+              >Read more →</a
+            >
           </div>
         </div>
         <div
           data-aos="zoom-in"
           data-aos-delay="200"
-          class="shadow-md flex flex-col h-full md:h-[420px] cursor-pointer rounded-lg mb-12 md:mb-0"
+          class="shadow-md flex flex-col h-full cursor-pointer rounded-lg mb-12 md:mb-0"
         >
           <div>
             <img src="Images/marketing.jpg" />
           </div>
           <div class="p-4 flex flex-col flex-grow justify-between">
-            <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
+            <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Case Studies</span
             >
-            <h3 class="text-lg font-bold py-3 md:py-0">
+            <h3 class="text-lg font-bold py-2">
               The ROI of Influencer Marketing: What the Numbers Say
             </h3>
             <p>
               Break down the real returns brands are seeing with influencer
               campaigns and how you can measure success for your business.
             </p>
+            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
+              >Read more →</a
+            >
           </div>
         </div>
         <div
           data-aos="zoom-in"
           data-aos-delay="200"
-          class="shadow-md flex flex-col h-full md:h-[420px] cursor-pointer rounded-lg"
+          class="shadow-md flex flex-col h-full cursor-pointer rounded-lg"
         >
           <div>
             <img src="Images/trends.jpg" />
           </div>
 
           <div class="p-4 flex flex-col flex-grow justify-between">
-            <span class="bg-accent text-text px-4 py-1 rounded-2xl self-start"
+            <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Trends</span
             >
-            <h3 class="text-lg font-bold py-3 md:py-0">
+            <h3 class="text-lg font-bold py-2">
               Top 5 Influencer Marketing Trends to Watch in 2025
             </h3>
             <p>
               Stay ahead of the curve with the latest trends shaping social
               media influence, from micro-creators to AI-driven campaigns.
             </p>
+            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
+              >Read more →</a
+            >
           </div>
         </div>
       </div>
@@ -705,6 +727,181 @@
       </div>
     </section>
 
+    <!-- FAQs Section -->
+    <section class="px-5 md:px-24 py-10 text-textsecondary bg-secondary">
+      <div data-aos="zoom-out" class="flex flex-col items-center pb-10">
+        <h2 class="text-2xl font-heading font-bold text-center">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-md text-center py-2">
+          We've kept things simple, but if you're wondering, here’s more.
+        </p>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>What does Socianova do?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            Socianova is a digital-first influencer marketing company that helps
+            brands connect with authentic creators, manage campaigns, and grow
+            through data-driven strategies.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>Who are your typical clients?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            We work with startups, SMEs, and established brands across
+            industries, from fashion and beauty to tech and lifestyle — helping
+            them scale through influencer partnerships and digital campaigns.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>How do you select influencers for a campaign?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            We analyze audience data, engagement rates, content quality, and
+            brand fit to match your campaign with the right creators for
+            authentic results.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span
+              >What makes Socianova different from other influencer marketing
+              agencies?</span
+            >
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            Our mix of data analytics, creative storytelling, and authentic
+            creator relationships allows us to deliver measurable results — not
+            just reach.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>Can you handle campaigns for international brands?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            Yes. We operate globally and can manage campaigns across multiple
+            regions, languages, and social platforms.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>How do you measure campaign success?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            We track key metrics like engagement, conversions, audience growth,
+            and ROI — providing detailed performance reports after every
+            campaign.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>Do you offer custom packages or pricing?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            Yes. Every campaign is tailored to fit your brand goals, budget, and
+            target audience. Get in touch to discuss a package that works for
+            you.
+          </p>
+        </details>
+
+        <details
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          class="group bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <summary
+            class="flex justify-between items-center cursor-pointer p-6 font-semibold text-lg text-gray-800 list-none"
+          >
+            <span>How can I get started with Socianova?</span>
+            <i
+              class="icon fa-solid fa-circle-chevron-down text-accent transition-transform duration-300 group-open:rotate-180"
+            ></i>
+          </summary>
+          <p class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+            Simply reach out through our contact form or email us at
+            hello@socianova.com — our team will respond within 24 hours to
+            discuss your campaign goals.
+          </p>
+        </details>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section
       id="contact"
@@ -712,18 +909,21 @@
     >
       <div data-aos="zoom-in" class="flex flex-col items-center pb-10">
         <h2 class="text-2xl font-heading font-bold text-center">
-          Let’s Build Something Together
+          Let's Build Something Together
         </h2>
         <p class="max-w-md text-center py-2">
-          We’d love to hear from you. Socianova helps startups and brands grow
+          We'd love to hear from you. Socianova helps startups and brands grow
           and thrive through authentic influence.
         </p>
       </div>
       <div class="md:flex items-start justify-between">
-        <div
+        <form
           data-aos="slide-right"
           data-aos-delay="200"
           class="max-w-xl md:w-xl p-8 rounded-xl shadow-md flex flex-col"
+          id="contactForm"
+          action="https://formspree.io/f/xzzknjpo"
+          method="POST"
         >
           <!-- Name -->
           <div class="flex flex-col">
@@ -735,13 +935,14 @@
               id="name"
               name="name"
               placeholder="Your full name"
+              required
               class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
             />
           </div>
 
           <!-- Email -->
           <div class="flex flex-col">
-            <label for="email" class="text-sm font-medium text-gray-700 mb-1"
+            <label for="email" class="text-sm font-medium text-gray-700 m-1"
               >Email</label
             >
             <input
@@ -749,13 +950,14 @@
               id="email"
               name="email"
               placeholder="you@example.com"
+              required
               class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
             />
           </div>
 
           <!-- Message -->
           <div class="flex flex-col">
-            <label for="message" class="text-sm font-medium text-gray-700 mb-1"
+            <label for="message" class="text-sm font-medium text-gray-700 m-1"
               >Message</label
             >
             <textarea
@@ -763,15 +965,23 @@
               name="message"
               rows="5"
               placeholder="Write your message..."
+              required
               class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
             ></textarea>
           </div>
 
+          <!-- Success/Error Messages -->
+          <div id="formStatus" class="hidden mt-2 p-3 rounded-lg text-sm"></div>
+
           <!-- Submit Button -->
-          <button type="submit" class="primary-btn shadow-md mt-2 btn-effect">
+          <button
+            type="submit"
+            class="primary-btn shadow-md mt-2 btn-effect"
+            id="submitBtn"
+          >
             Send Message
           </button>
-        </div>
+        </form>
 
         <div data-aos="slide-left" data-aos-delay="200" class="pt-20 md:pt-0">
           <span class="font-bold">Email</span>
@@ -783,6 +993,7 @@
         </div>
       </div>
     </section>
+
     <!-- Footer Section -->
     <footer class="px-5 md:px-24 py-10 text-text bg-primary">
       <div
