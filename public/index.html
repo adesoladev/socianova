@@ -478,7 +478,7 @@
           <div>
             <img src="Images/influencer.jpg" />
           </div>
-          <div class="p-4 flex flex-col flex-grow justify-between">
+          <div class="p-4 flex flex-col flex-grow justify-between items-start">
             <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Guides</span
             >
@@ -489,9 +489,12 @@
               Not every influencer is a fit. Learn the key factors to consider,
               from audience alignment to authenticity, before partnering up.
             </p>
-            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
-              >Read more →</a
+            <button
+              onclick="openModal('blog1')"
+              class="mt-2 text-accent cursor-pointer hover:underline"
             >
+              Read more →
+            </button>
           </div>
         </div>
         <div
@@ -502,7 +505,7 @@
           <div>
             <img src="Images/marketing.jpg" />
           </div>
-          <div class="p-4 flex flex-col flex-grow justify-between">
+          <div class="p-4 flex flex-col flex-grow justify-between items-start">
             <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Case Studies</span
             >
@@ -513,9 +516,15 @@
               Break down the real returns brands are seeing with influencer
               campaigns and how you can measure success for your business.
             </p>
-            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
+            <!-- <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
               >Read more →</a
+            > -->
+            <button
+              onclick="openModal('blog2')"
+              class="mt-2 text-accent cursor-pointer hover:underline"
             >
+              Read more →
+            </button>
           </div>
         </div>
         <div
@@ -527,7 +536,7 @@
             <img src="Images/trends.jpg" />
           </div>
 
-          <div class="p-4 flex flex-col flex-grow justify-between">
+          <div class="p-4 flex flex-col flex-grow justify-between items-start">
             <span class="bg-primary text-text px-4 py-1 rounded-md self-start"
               >Trends</span
             >
@@ -538,12 +547,31 @@
               Stay ahead of the curve with the latest trends shaping social
               media influence, from micro-creators to AI-driven campaigns.
             </p>
-            <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
+            <!-- <a href="#" class="mt-2 text-accent cursor-pointer hover:underline"
               >Read more →</a
+            > -->
+            <button
+              onclick="openModal('blog3')"
+              class="mt-2 text-accent cursor-pointer hover:underline"
             >
+              Read more →
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- Modal Container - ONLY ADD THIS ONCE -->
+      <div id="blogModal" class="modal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-content">
+          <div class="modal-close md:mr-2" onclick="closeModal()">
+            <i class="fa-solid fa-times"></i>
+          </div>
+          <div id="modalBody" class="p-8 md:p-12">
+            <!-- Content will appear here when you click "Read more" -->
+          </div>
+        </div>
+      </div>
+
       <div
         class="flex flex-col md:flex-row justify-center items-center mt-10 gap-7"
       >
