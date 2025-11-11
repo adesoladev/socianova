@@ -39,12 +39,6 @@ section {
   overflow-x: hidden;
 }
 
-/* Ensure images don't overflow */
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
 .primary-btn {
   background-color: #73cb4e;
   color: #000000;
@@ -76,6 +70,64 @@ section {
   border-radius: 15%;
 }
 
+/* Logo Slider */
+.logo-slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative; /* Added */
+  width: 100%; /* Ensures container takes full width */
+  position: relative;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-shrink: 0;
+  padding-right: 4rem;
+  animation: 20s slide infinite linear;
+  will-change: transform; /* Improves performance */
+}
+
+.logos img {
+  height: 30px;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-slider:hover .logos {
+  animation-play-state: paused;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f9fafb);
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f9fafb);
+}
 /* Blog Post Section */
 .modal {
   display: none;
