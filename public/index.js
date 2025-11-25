@@ -311,3 +311,22 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
+// BACK TO TOP ARROW
+    const backToTopBtn = document.getElementById('backToTop');
+  // Show the button when scrolling
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+    } else {
+      backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
+
+  // Scroll to top smoothly
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
